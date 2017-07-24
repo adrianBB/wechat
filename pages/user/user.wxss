@@ -1,0 +1,14 @@
+.userInfo{
+  height: 600px;
+  background: lightgray;
+}
+.hidd{
+  width:750rpx;
+  background: wheat;
+}
+.active{
+  color: palevioletred;
+}
+.scroll-view-item{
+  height: 100px;
+}

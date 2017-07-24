@@ -1,0 +1,46 @@
+<view class="userInfo">
+  用户中心
+  刷卡上车
+  用户名：{{userName}}
+  <view id="item-{{userId}}">用户ID</view>
+  <view wx-if="{{bool}}">显示不</view>
+  <view hidden="{{bool?true:false}}" class="hidd">Hidden</view>
+  <view wx:for="{{arr}}" wx:for-item="i" wx:for-index="idx" wx:key="index" data-name="{{i.name}}" bindtap="handleName">
+  {{idx}}--{{i.name}}
+  </view>
+  <button bindtap="handleClick">登录</button>
+  <button bindtap="goUrl">跳转</button>
+  <button bindtap="showDetails">事件</button>
+  <!--<view hover-class="active">点我有效果</view>
+  <view class="section">
+  <scroll-view scroll-y style="height: 200px;background:lightblue" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="red" >
+    <view id="green" class="scroll-view-item bc_green">嗷嗷</view>
+    <view id="red"  class="scroll-view-item bc_red">宝宝</view>
+    <view id="yellow" class="scroll-view-item bc_yellow">常常</view>
+    <view id="blue" class="scroll-view-item bc_blue">滴滴</view>
+  </scroll-view>
+  <swiper indicator-dots indicator-color="pink" indicator-active-color="gray" autoplay interval="1000" circular current="1" bindchange="swiperChange"
+>
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>-->
+
+<!--<icon type="success" size="23" />
+<progress percent="20" show-info />
+<progress percent="40" stroke-width="12" />
+<progress percent="60" activecolor="pink" />
+<progress percent="80" active />
+<button size="mini" type="default" plain>按钮</button>
+<button size="mini" type="primary" loading>按钮</button>
+<button size="mini" type="warn" open-type="share">按钮</button>-->
+
+<form bindsubmit="formSubmit">
+  <input  name="username" value="{{userName}}" style="background:white" placeholder="输入框" focus confirm-type="done"/>
+  <button formType="submit">Submit</button>
+</form>
+
+</view>

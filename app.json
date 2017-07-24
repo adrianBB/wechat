@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/other/other"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "pink",
+    "navigationBarTitleText": "公交车",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "hotpink"
+  },
+  "tabBar": {
+    "backgroundColor": "pink",
+    "color": "white",
+    "selectedColor": "hotpink",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "",
+      "selectedIconPath": ""
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "用户中心",
+      "iconPath": "",
+      "selectedIconPath": ""
+    },
+    {
+      "pagePath": "pages/other/other",
+      "text": "其他",
+      "iconPath": "",
+      "selectedIconPath": ""
+    }
+    ],
+    "networkTimeout": {
+      "request": 6000,
+      "connectSocket": 6000,
+      "uploadFile": 6000,
+      "downloadFile": 6000
+    }
+  }
+}
